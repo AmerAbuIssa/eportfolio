@@ -186,6 +186,25 @@
   .tl-role{font-weight:600; font-size:1.02rem;}
   .tl-item p{margin:0.35rem 0 0; color:var(--sub);}
 
+  /* Gallery */
+  .gallery-heading{
+    margin-top:2.4rem; font-size:1rem; color:var(--sub); font-weight:600;
+    border-top:1px solid var(--rule); padding-top:1.6rem;
+  }
+  .gallery-grid{
+    margin-top:1rem; display:grid; grid-template-columns:repeat(3, 1fr); gap:0.9rem;
+  }
+  .gallery-grid figure{margin:0;}
+  .gallery-grid img{
+    width:100%; height:150px; object-fit:cover; display:block; border-radius:2px;
+  }
+  .gallery-grid figcaption{
+    font-size:0.8rem; color:var(--sub); margin-top:0.4rem; line-height:1.3;
+  }
+  @media (max-width:680px){
+    .gallery-grid{grid-template-columns:repeat(2, 1fr);}
+  }
+
   /* simple lists */
   .plain-list{margin:1rem 0 0; padding:0; list-style:none;}
   .plain-list li{
@@ -296,8 +315,7 @@
           <li>CAN bus diagnostics &amp; ECU programming</li>
           <li>ADAS calibration</li>
           <li>Hybrid &amp; high-voltage powertrain systems</li>
-          <li>AS/NZS 3000 electrical compliance</li>
-          <li>Circuit design, load calculations &amp; protection systems</li>
+          <li>AS/NZS 3000 compliance — circuit design, load calculations &amp; protection systems</li>
           <li>SolidWorks CAD &amp; FEA</li>
           <li>Embedded hardware configuration (GPS/GSM)</li>
           <li>Python/C++ for robotics (ROS2)</li>
@@ -310,7 +328,6 @@
           <li>Cross-functional teamwork on multi-person engineering projects</li>
           <li>Technician mentoring &amp; knowledge transfer</li>
           <li>Self-directed problem-solving on unsupervised projects</li>
-          <li>Stakeholder-aware technical communication</li>
           <li>Rostering, training &amp; team coordination</li>
         </ul>
       </div>
@@ -335,7 +352,7 @@
     </div>
     <div class="proj">
       <div class="proj-head"><h3>12V–40V boost converter</h3><span class="proj-code">Power Electronics</span></div>
-      <p>Designed, built, and documented a MOSFET-based boost converter, including IEC-style circuit schematics and switching-timing analysis.</p>
+      <p>Designed, built, and documented a MOSFET-based boost converter that steps a low-voltage supply up to 40V for higher-voltage subsystems, including circuit schematics and switching-timing analysis.</p>
     </div>
     <div class="proj">
       <div class="proj-head"><h3>Solar parabolic BBQ</h3><span class="proj-code">Mechanical Systems Design Studio 2</span></div>
@@ -343,7 +360,7 @@
     </div>
     <div class="proj">
       <div class="proj-head"><h3>Mars rover localisation</h3><span class="proj-code">UTS 49274 — Space Robotics</span></div>
-      <p>Implemented a ROS2/Python particle-filter localisation system for a simulated Mars rover.</p>
+      <p>Implemented a ROS2/Python particle-filter localisation system that lets a simulated Mars rover estimate its own position without GPS.</p>
     </div>
     <div class="proj">
       <div class="proj-head"><h3>Jaithmathang water rights — "Water Is Life"</h3><span class="proj-code">Group research project</span></div>
@@ -379,6 +396,30 @@
         <div class="tl-role">Apprentice Mechanic, All Parts Auto Pty Ltd</div>
         <p>Serviced vehicles and built foundational knowledge of automotive components and diagnostic tools.</p>
       </div>
+    </div>
+
+    <h3 class="gallery-heading">In the workshop</h3>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/workshop-exterior.jpg" alt="Amer standing outside Neysie Auto Service Centre, Rydalmere" loading="lazy">
+        <figcaption>Neysie Auto Service Centre, Rydalmere — my WIL 2 placement</figcaption>
+      </figure>
+      <figure>
+        <img src="img/hybrid-battery-tanjid.jpg" alt="Working on a hybrid vehicle battery pack with colleague Tanjid" loading="lazy">
+        <figcaption>Servicing a hybrid battery pack with colleague Tanjid</figcaption>
+      </figure>
+      <figure>
+        <img src="img/powertrain-john.jpg" alt="Diagnosing a powertrain fault with supervisor John" loading="lazy">
+        <figcaption>Diagnosing a powertrain fault with my supervisor, John</figcaption>
+      </figure>
+      <figure>
+        <img src="img/timing-chain.jpg" alt="Amer replacing a timing chain" loading="lazy">
+        <figcaption>Timing chain replacement</figcaption>
+      </figure>
+      <figure>
+        <img src="img/oscilloscope.jpg" alt="Oscilloscope showing an injector waveform" loading="lazy">
+        <figcaption>Oscilloscope injector waveform analysis</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -437,7 +478,8 @@
         electrical trade units and short courses beyond my core degree (Personal Commitment), contributing to
         community-facing research like the water rights project (Obligation to Community), taking on safety-critical
         work at Neysie and Buddi (Value in the Workplace), and accumulating a project portfolio spanning robotics,
-        power systems, and design (Technical Proficiency).
+        power systems, and design (Technical Proficiency). Longer term, I'm working toward Engineers Australia
+        membership and Chartered status via the Stage 2 pathway.
       </p>
     </div>
   </div>
