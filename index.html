@@ -166,6 +166,15 @@
   }
   .resume-box p{color:#C9D6DF; margin:0.25rem 0 0; font-size:0.92rem;}
 
+  .resume-embed{margin-top:0.9rem;}
+  .resume-embed iframe{
+    width:100%; height:640px; border:1px solid var(--rule); border-radius:2px; display:block;
+    background:#fff;
+  }
+  @media (max-width:680px){
+    .resume-embed iframe{height:420px;}
+  }
+
   /* Projects list */
   .proj{padding:1.1rem 0; border-top:1px solid var(--rule);}
   .proj:first-of-type{border-top:none;}
@@ -298,6 +307,11 @@
         <p>One page · tailored for graduate field engineering applications</p>
       </div>
       <a class="btn btn-primary" href="Amer_AbuIssa_Resume.pdf" download>Download résumé</a>
+    </div>
+    <div class="resume-embed">
+      <iframe src="Amer_AbuIssa_Resume.pdf" title="Amer Abu-Issa résumé" loading="lazy">
+        <p>Your browser can't display embedded PDFs. <a href="Amer_AbuIssa_Resume.pdf">Download the résumé instead</a>.</p>
+      </iframe>
     </div>
   </div>
 </section>
